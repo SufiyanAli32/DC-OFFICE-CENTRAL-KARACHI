@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>District Central Karachi | Government of Sindh</title>
+  <meta name="description" content="Official government portal homepage for District Central Karachi, Government of Sindh.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="welcome-modal" id="welcomeModal" aria-hidden="true">
+    <div class="welcome-card" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+      <button class="modal-close" id="welcomeClose" aria-label="Close welcome message"><i class="bi bi-x-lg"></i></button>
+      <div class="placeholder-image welcome-image">
+        <i class="bi bi-building-fill-check"></i>
+      </div>
+      <div class="welcome-content">
+        <span class="section-kicker">Official Government Website</span>
+        <h1 id="welcomeTitle">Welcome to District Central Karachi</h1>
+        <p>This public portal is prepared to support accessible services, reliable information, district updates, and citizen facilitation under the Government of Sindh.</p>
+        <label class="remember-choice">
+          <input type="checkbox" id="dontShowAgain">
+          <span>Don't Show Again</span>
+        </label>
+        <button class="btn btn-primary-gradient" id="continueBtn">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="top-gov-bar">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <span><i class="bi bi-shield-check"></i> Government of Sindh</span>
+            <span class="d-none d-md-inline"><i class="bi bi-patch-check"></i> Official Government Website</span>
+          </div>
+          <div class="d-flex flex-wrap align-items-center gap-3">
+            <span><i class="bi bi-clock"></i> Mon-Fri 9:00 AM - 5:00 PM</span>
+            <a href="tel:02100000000"><i class="bi bi-telephone"></i> Emergency Contact</a>
+            <button class="top-link" type="button">اردو</button>
+            <button class="top-link" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header">
+      <div class="container-fluid px-lg-5">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-4">
+            <a class="brand-lockup" href="#home" aria-label="District Central Karachi home">
+              <span class="gov-logo"><i class="bi bi-bank2"></i></span>
+              <span>
+                <strong>District Central Karachi</strong>
+                <small>Government of Sindh</small>
+              </span>
+            </a>
+          </div>
+          <div class="col-lg-5">
+            <form class="header-search" role="search">
+              <i class="bi bi-search"></i>
+              <input type="search" placeholder="Search services, departments, notices..." aria-label="Search portal">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-lg-3">
+            <div class="header-actions">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a class="complaint-btn" href="#complaint"><i class="bi bi-chat-square-text"></i> Complaint</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-xl sticky-nav">
+      <div class="container-fluid px-lg-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portalNav" aria-controls="portalNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="portalNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About District</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-grid">
+                  <a href="#">Vision</a><a href="#">Mission</a><a href="#">History</a><a href="#">District Profile</a><a href="#">Map</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Deputy Commissioner</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-grid">
+                  <a href="#dc">Biography</a><a href="#dc">Message</a><a href="#dc">Responsibilities</a><a href="#dc">Achievements</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Administrative Team</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-grid wide">
+                  <a href="#hierarchy">Chief Secretary Sindh</a><a href="#hierarchy">Commissioner Karachi</a><a href="#hierarchy">Deputy Commissioner</a><a href="#hierarchy">ADC-I</a><a href="#hierarchy">ADC-II</a><a href="#acs">Assistant Commissioners</a><a href="#hierarchy">Mukhtiarkars</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Departments</a>
+              <div class="dropdown-menu mega-menu">
+                <div class="mega-grid wide">
+                  <a href="#departments">Revenue</a><a href="#departments">Accounts</a><a href="#departments">General</a><a href="#departments">Judicial</a><a href="#departments">Establishment</a><a href="#departments">Domicile</a><a href="#departments">Arms</a><a href="#departments">Control Room</a><a href="#departments">IT Cell</a><a href="#departments">Complaint Cell</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#services">Citizen Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#initiatives">Initiatives</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero-section">
+      <div class="hero-bg placeholder-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="container-fluid px-lg-5 hero-content">
+        <div class="row align-items-center min-vh-hero">
+          <div class="col-xl-7 col-lg-8" data-aos="fade-up">
+            <span class="hero-badge"><i class="bi bi-stars"></i> Citizen centered public service</span>
+            <h1>District Central Karachi Government Portal</h1>
+            <p>Connecting residents with district services, administrative updates, public notices, complaint facilitation, and official information through one modern digital gateway.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary-gradient" href="#about">Learn More</a>
+              <a class="btn btn-outline-light" href="#services">Citizen Services</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" aria-label="Hero slider indicators"><span class="active"></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <!-- <section class="stats-strip">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-6 col-lg-3"><div class="stat-item"><strong data-counter="52">0</strong><span>Active Services</span></div></div>
+          <div class="col-6 col-lg-3"><div class="stat-item"><strong data-counter="18">0</strong><span>Departments</span></div></div>
+          <div class="col-6 col-lg-3"><div class="stat-item"><strong data-counter="125">0</strong><span>Public Notices</span></div></div>
+          <div class="col-6 col-lg-3"><div class="stat-item"><strong data-counter="24">0</strong><span>Support Hours</span></div></div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="section-kicker">Leadership</span>
+          <h2>Government Leadership</h2>
+          <p>Messages and direction from senior leadership guiding public administration and citizen service delivery.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="profile-card large-card">
+              <div class="profile-img placeholder-image"><i class="bi bi-person-badge"></i></div>
+              <div>
+                <span class="section-kicker">Chief Secretary Sindh</span>
+                <h3>Mr. Example Ahmed</h3>
+                <p>Our administrative priority is responsive governance, transparent service delivery, and coordination across departments for the welfare of every citizen.</p>
+                <a class="link-button" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+           <div class="col-lg-6" data-aos="fade-up">
+            <article class="profile-card large-card">
+              <div class="profile-img placeholder-image"><i class="bi bi-person-badge"></i></div>
+              <div>
+                <span class="section-kicker">Chief Secretary Sindh</span>
+                <h3>Mr. Example Ahmed</h3>
+                <p>Our administrative priority is responsive governance, transparent service delivery, and coordination across departments for the welfare of every citizen.</p>
+                <a class="link-button" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+         <center> <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="profile-card large-card">
+              <div class="profile-img placeholder-image"><i class="bi bi-person-workspace"></i></div>
+              <div>
+                <span class="section-kicker">Commissioner Karachi</span>
+                <h3>Ms. Example Fatima</h3>
+                <p>Karachi's district administration is committed to coordinated urban management, timely public information, and practical solutions for residents.</p>
+                <a class="link-button" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div></center>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dc-section" id="dc">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5" data-aos="zoom-in">
+            <div class="dc-portrait placeholder-image"><i class="bi bi-person-vcard"></i></div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="section-kicker">Deputy Commissioner</span>
+            <h2>Mr. Sample Khan</h2>
+            <p class="lead">The District Central Karachi administration works to provide efficient public services, maintain law and order coordination, and strengthen civic confidence through accessible governance.</p>
+            <div class="row g-3 my-4">
+              <div class="col-md-4"><div class="mini-panel"><i class="bi bi-eye"></i><strong>Vision</strong><span>Accessible and accountable district governance.</span></div></div>
+              <div class="col-md-4"><div class="mini-panel"><i class="bi bi-list-check"></i><strong>Responsibilities</strong><span>Revenue, coordination, and public facilitation.</span></div></div>
+              <div class="col-md-4"><div class="mini-panel"><i class="bi bi-award"></i><strong>Achievements</strong><span>Improved service counters and complaint tracking.</span></div></div>
+            </div>
+            <a class="btn btn-primary-gradient" href="#">Read Complete Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section" id="hierarchy">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="section-kicker">Administration</span>
+          <h2>Administrative Hierarchy</h2>
+          <p>A clear view of district coordination from provincial leadership to department heads.</p>
+        </div>
+        <div class="flow-diagram" data-aos="fade-up">
+          <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Chief Secretary</strong><small>Government of Sindh</small></a>
+          <span class="flow-arrow"><i class="bi bi-arrow-down"></i></span>
+          <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Commissioner</strong><small>Karachi Division</small></a>
+          <span class="flow-arrow"><i class="bi bi-arrow-down"></i></span>
+          <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Deputy Commissioner</strong><small>District Central</small></a>
+          <span class="flow-arrow"><i class="bi bi-arrow-down"></i></span>
+          <div class="flow-row">
+            <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>ADC I</strong><small>Revenue & Coordination</small></a>
+            <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>ADC II</strong><small>General Administration</small></a>
+          </div>
+          <span class="flow-arrow"><i class="bi bi-arrow-down"></i></span>
+          <div class="flow-row">
+            <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Assistant Commissioners</strong><small>Sub-Divisions</small></a>
+            <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Mukhtiarkars</strong><small>Revenue Field Offices</small></a>
+            <a class="flow-card" href="#"><span class="avatar placeholder-image"><i class="bi bi-person"></i></span><strong>Department Heads</strong><small>Public Services</small></a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+ <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="section-kicker">Leadership</span>
+          <h2>ADC</h2>
+          <p>Messages and direction from senior leadership guiding public administration and citizen service delivery.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-up">
+            <article class="profile-card large-card">
+              <div class="profile-img placeholder-image"><i class="bi bi-person-badge"></i></div>
+              <div>
+                <span class="section-kicker">Chief Secretary Sindh</span>
+                <h3>Mr. Example Ahmed</h3>
+                <p>Our administrative priority is responsive governance, transparent service delivery, and coordination across departments for the welfare of every citizen.</p>
+                <a class="link-button" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+           <div class="col-lg-6" data-aos="fade-up">
+            <article class="profile-card large-card">
+              <div class="profile-img placeholder-image"><i class="bi bi-person-badge"></i></div>
+              <div>
+                <span class="section-kicker">Chief Secretary Sindh</span>
+                <h3>Mr. Example Ahmed</h3>
+                <p>Our administrative priority is responsive governance, transparent service delivery, and coordination across departments for the welfare of every citizen.</p>
+                <a class="link-button" href="#">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+    <section class="section muted-section" id="acs">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Sub-Divisions</span><h2>Assistant Commissioners</h2></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up"><article class="person-card"><div class="avatar-lg placeholder-image"><i class="bi bi-person"></i></div><h3>Mr. Ali Raza</h3><p>Assistant Commissioner North Nazimabad</p><a href="#">Read Profile</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80"><article class="person-card"><div class="avatar-lg placeholder-image"><i class="bi bi-person"></i></div><h3>Ms. Sana Khan</h3><p>Assistant Commissioner Liaquatabad</p><a href="#">Read Profile</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160"><article class="person-card"><div class="avatar-lg placeholder-image"><i class="bi bi-person"></i></div><h3>Mr. Bilal Ahmed</h3><p>Assistant Commissioner Gulberg</p><a href="#">Read Profile</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240"><article class="person-card"><div class="avatar-lg placeholder-image"><i class="bi bi-person"></i></div><h3>Ms. Maria Shah</h3><p>Assistant Commissioner New Karachi</p><a href="#">Read Profile</a></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="departments">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Departments</span><h2>District Offices</h2><p>Access departmental information, responsibilities, and citizen facilitation counters.</p></div>
+        <div class="card-grid">
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-geo-alt"></i><h3>Revenue</h3><p>Land, certificates, and revenue record coordination.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-calculator"></i><h3>Accounts</h3><p>Budget support, payments, and financial administration.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-folder2-open"></i><h3>General</h3><p>Administrative correspondence and operational support.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-bank"></i><h3>Judicial</h3><p>Magisterial coordination and legal administrative matters.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-people"></i><h3>Establishment</h3><p>Staffing, postings, records, and office management.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-file-earmark-person"></i><h3>Domicile</h3><p>Application facilitation and document verification.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-shield-lock"></i><h3>Arms</h3><p>Licensing support and official application guidance.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-headset"></i><h3>Control Room</h3><p>Emergency coordination and district response monitoring.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-cpu"></i><h3>IT</h3><p>Digital services, portal support, and data systems.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-chat-dots"></i><h3>Complaint Cell</h3><p>Citizen complaints, tracking, and resolution follow-up.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-megaphone"></i><h3>Public Relations</h3><p>Press updates, public awareness, and media coordination.</p><a href="#">View Department</a></article>
+          <article class="dept-card" data-aos="fade-up"><i class="bi bi-grid"></i><h3>Others</h3><p>Additional district functions and public service desks.</p><a href="#">View Department</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading light" data-aos="fade-up"><span class="section-kicker">Citizen Services</span><h2>Fast Access Services</h2><p>Common services for residents, businesses, and public applicants.</p></div>
+        <div class="service-grid">
+          <a class="service-card" href="#"><i class="bi bi-file-earmark-person"></i><span>Domicile</span></a>
+          <a class="service-card" href="#"><i class="bi bi-person-check"></i><span>PRC</span></a>
+          <a class="service-card" href="#"><i class="bi bi-file-check"></i><span>NOC</span></a>
+          <a class="service-card" href="#"><i class="bi bi-shield"></i><span>Arms</span></a>
+          <a class="service-card" href="#"><i class="bi bi-download"></i><span>Downloads</span></a>
+          <a class="service-card" href="#"><i class="bi bi-chat-right-text"></i><span>Complaint</span></a>
+          <a class="service-card" href="#"><i class="bi bi-tags"></i><span>Price List</span></a>
+          <a class="service-card" href="#"><i class="bi bi-file-earmark-ruled"></i><span>Revenue Certificate</span></a>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <section class="section muted-section" id="initiatives">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Initiatives</span><h2>Government Initiatives</h2></div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in"><article class="initiative-card"><div class="placeholder-image"><i class="bi bi-building-gear"></i></div><h3>Digital Service Desk</h3><a href="#">Read More</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="80"><article class="initiative-card"><div class="placeholder-image"><i class="bi bi-bag-check"></i></div><h3>Market Price Monitoring</h3><a href="#">Read More</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="160"><article class="initiative-card"><div class="placeholder-image"><i class="bi bi-clipboard-data"></i></div><h3>Complaint Tracking</h3><a href="#">Read More</a></article></div>
+          <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="240"><article class="initiative-card"><div class="placeholder-image"><i class="bi bi-geo"></i></div><h3>District Field Visits</h3><a href="#">Read More</a></article></div>
+        </div>
+      </div>
+    </section>
+   <section class="section" id="news">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Updates</span><h2>Latest News</h2></div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up"><article class="news-card"><div class="news-img placeholder-image"><i class="bi bi-newspaper"></i></div><div><time>27 July 2026</time><h3>District coordination meeting held</h3><p>Officials reviewed public facilitation counters and service improvement priorities.</p><a href="#">Read More</a></div></article></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><article class="news-card"><div class="news-img placeholder-image"><i class="bi bi-newspaper"></i></div><div><time>25 July 2026</time><h3>Price monitoring campaign continues</h3><p>Field teams inspected markets to support fair pricing and consumer protection.</p><a href="#">Read More</a></div></article></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><article class="news-card"><div class="news-img placeholder-image"><i class="bi bi-newspaper"></i></div><div><time>22 July 2026</time><h3>Public service desk upgraded</h3><p>Applicants can now access clearer guidance and improved document counters.</p><a href="#">Read More</a></div></article></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="notice-board">
+              <div class="notice-header"><i class="bi bi-pin-angle"></i><h2>Public Notices</h2></div>
+              <div class="notice-scroll">
+                <ul>
+                  <li>Applications for public facilitation counters will be received during office hours.</li>
+                  <li>District price list has been issued for public awareness and market monitoring.</li>
+                  <li>Revenue certificate applicants are advised to verify required documents before visiting.</li>
+                  <li>Complaint cell follow-up desk remains available for registered public matters.</li>
+                  <li>Office correspondence should include valid contact details for timely response.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" id="gallery" data-aos="fade-left">
+            <div class="section-heading text-start"><span class="section-kicker">Gallery</span><h2>District Gallery</h2></div>
+            <div class="gallery-grid">
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+              <div class="placeholder-image"><i class="bi bi-image"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="downloads">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Resources</span><h2>Downloads</h2></div>
+        <div class="download-grid">
+          <a class="download-card" href="#"><i class="bi bi-file-earmark-pdf"></i><strong>Dummy PDF</strong><span>Public information document</span></a>
+          <a class="download-card" href="#"><i class="bi bi-file-earmark-text"></i><strong>Circular</strong><span>Official administrative circular</span></a>
+          <a class="download-card" href="#"><i class="bi bi-file-earmark-zip"></i><strong>Tender</strong><span>Procurement notice package</span></a>
+          <a class="download-card" href="#"><i class="bi bi-bell"></i><strong>Notification</strong><span>Government notification file</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><span class="section-kicker">Connect</span><h2>Social Media Feed</h2></div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up"><div class="social-feed"><i class="bi bi-facebook"></i><h3>Facebook</h3><p>Latest public notices, event coverage, and community updates will appear here.</p></div></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"><div class="social-feed"><i class="bi bi-instagram"></i><h3>Instagram</h3><p>Photo updates from district activities, inspections, and official campaigns.</p></div></div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200"><div class="social-feed"><i class="bi bi-youtube"></i><h3>YouTube</h3><p>Video briefings, public awareness messages, and administrative announcements.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="complaint-cta" id="complaint">
+      <div class="container">
+        <div class="cta-panel" data-aos="zoom-in">
+          <div>
+            <span class="section-kicker">Complaint Box</span>
+            <h2>Need Help?</h2>
+            <p>Register a public complaint or track an existing complaint through the district facilitation channel.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary-gradient" href="#">Register Complaint</a>
+            <a class="btn btn-outline-primary" href="#">Track Complaint</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="brand-lockup footer-brand" href="#home"><span class="gov-logo"><i class="bi bi-bank2"></i></span><span><strong>District Central Karachi</strong><small>Government of Sindh</small></span></a>
+          <p>Official district portal for public information, citizen services, administrative updates, and complaint facilitation.</p>
+          <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
+        </div>
+        <div class="col-6 col-lg-2"><h3>Quick Links</h3><a href="#about">About</a><a href="#news">News</a><a href="#gallery">Gallery</a><a href="#downloads">Downloads</a></div>
+        <div class="col-6 col-lg-2"><h3>Departments</h3><a href="#departments">Revenue</a><a href="#departments">Accounts</a><a href="#departments">IT Cell</a><a href="#departments">Complaint Cell</a></div>
+        <div class="col-6 col-lg-2"><h3>Services</h3><a href="#services">Domicile</a><a href="#services">PRC</a><a href="#services">NOC</a><a href="#services">Price List</a></div>
+        <div class="col-6 col-lg-2"><h3>Important</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#complaint">Complaint</a><a href="#contact">Contact</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright 2026 District Central Karachi. All rights reserved.</span>
+        <span>Official Government Website</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
