@@ -1185,7 +1185,9 @@ input[type="checkbox"], input[type="radio"] {
 .spinner-border, .spinner-grow {
   color: var(--primary);
 }
-
+.row {
+    justify-content: center !important;
+}
 @media (max-width: 1199px) {
   .sticky-nav .navbar-nav {
     align-items: stretch;
