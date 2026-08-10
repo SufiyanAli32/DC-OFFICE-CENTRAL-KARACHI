@@ -123,6 +123,14 @@ function siteHeader() {
           <div class="collapse navbar-collapse" id="portalNav">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown position-static">
+                <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown">About District</a>
+                <div class="dropdown-menu mega-menu">
+                  <div class="mega-grid">
+                    <a href="about.html#vision">Vision</a><a href="about.html#mission">Mission</a><a href="about.html#history">History</a><a href="about.html#geography">District Profile</a><a href="about.html#map">Map</a>
+                  </div>
+                </div>
+              </li>
               <li class="nav-item"><a class="nav-link" href="deputy-commissioner.html">Deputy Commissioner</a></li>
               <li class="nav-item"><a class="nav-link" href="adc-1.html">ADC-I</a></li>
               <li class="nav-item"><a class="nav-link" href="adc-2.html">ADC-II</a></li>
@@ -135,6 +143,9 @@ function siteHeader() {
                 </div>
               </li>
               <li class="nav-item"><a class="nav-link" href="branches.html">Branches</a></li>
+              <li class="nav-item"><a class="nav-link" href="citizen-services.html">Citizen Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="initiatives.html">Initiatives</a></li>
               <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact-card">Contact</a></li>
             </ul>
@@ -154,10 +165,10 @@ function siteFooter() {
             <p>Official district portal for public information, citizen services, administrative updates, and complaint facilitation.</p>
             <div class="footer-social"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-youtube"></i></a></div>
           </div>
-          <div class="col-6 col-lg-2"><h3>Quick Links</h3><a href="index.html#about">About</a><a href="index.html#news">News</a><a href="index.html#gallery">Gallery</a><a href="index.html#downloads">Downloads</a></div>
+          <div class="col-6 col-lg-2"><h3>Quick Links</h3><a href="about.html">About</a><a href="news.html">News</a><a href="index.html#gallery">Gallery</a><a href="index.html#downloads">Downloads</a></div>
           <div class="col-6 col-lg-2"><h3>Branches</h3><a href="revenue.html">Revenue</a><a href="branches.html">Accounts</a><a href="branches.html">IT Cell</a><a href="branches.html">Complaint Cell</a></div>
           <div class="col-6 col-lg-2"><h3>Officers</h3><a href="deputy-commissioner.html">Deputy Commissioner</a><a href="adc-1.html">ADC-I</a><a href="adc-2.html">ADC-II</a><a href="ac-1.html">Assistant Commissioners</a></div>
-          <div class="col-6 col-lg-2"><h3>Important</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#contact-cta">Complaint</a><a href="#contact-card">Contact</a></div>
+          <div class="col-6 col-lg-2"><h3>Important</h3><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="citizen-services.html#service-complaint">Complaint</a><a href="#contact-card">Contact</a></div>
         </div>
         <div class="footer-bottom"><span>Copyright 2026 District Central Karachi. All rights reserved.</span><span>Official Government Website</span></div>
       </div>
