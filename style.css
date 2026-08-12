@@ -157,7 +157,7 @@ img { max-width: 100%; }
   color: var(--primary);
   font-weight: 700;
   padding: 1rem .86rem;
-  font-size: .70rem;
+  font-size: .80rem;
   position: relative;
 }
 .navbar .nav-link::after {
